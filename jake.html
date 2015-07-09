@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+
+		<style>
+			/* http://meyerweb.com/eric/tools/css/reset/ 
+			  v2.0 | 20110126
+		    License: none (public domain)
+			*/
+			/* I've been usinng this reset for all of my projects
+					---Jacob Farnsworth---
+			*/
+			html, body, div, span, applet, object, iframe,
+			h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+			a, abbr, acronym, address, big, cite, code,
+			del, dfn, em, img, ins, kbd, q, s, samp,
+			small, strike, strong, sub, sup, tt, var,
+			b, u, i, center,
+			dl, dt, dd, ol, ul, li,
+			fieldset, form, label, legend,
+			table, caption, tbody, tfoot, thead, tr, th, td,
+			article, aside, canvas, details, embed, 
+			figure, figcaption, footer, header, hgroup, 
+			menu, nav, output, ruby, section, summary,
+			time, mark, audio, video {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
+			}
+			/* HTML5 display-role reset for older browsers */
+			article, aside, details, figcaption, figure, 
+			footer, header, hgroup, menu, nav, section {
+				display: block;
+			}
+			body {
+				line-height: 1;
+			}
+			ol, ul {
+				list-style: none;
+			}
+			blockquote, q {
+				quotes: none;
+			}
+			blockquote:before, blockquote:after,
+			q:before, q:after {
+				content: '';
+				content: none;
+			}
+			table {
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+			/*****************************************/
+			html {
+				font-family: helvetica;
+				background: #34495e;
+				color: #bdc3c7;
+			}
+			body {
+			}
+			header {
+				text-align: center;
+				background: rgba(0, 0, 0, 0.1);
+				padding: 50px 10px 60px 10px;
+				font-size: 500%;
+				color: #bdc3c7;
+			}
+			.page-content {
+				max-width: 800px;
+				margin: 0 auto;
+				padding: 10px;
+			}
+			.page-content a {
+				color: #f39c12;
+				text-decoration: none;
+			}
+			.page-content a:hover {
+				color: #d35400;
+			}
+			.page-content h1 {
+				color: #f39c12;
+				font-size: 150%;
+				margin-bottom: 10px;
+			}
+			.page-content p {
+				padding-bottom: 20px;
+			}
+			#headshot { 
+				max-width: 300px;
+				position: absolute; 
+				top: 150px; 
+				left: 50%; 
+				margin-left: -150px; 
+				-webkit-border-radius: 50%;
+					 -moz-border-radius: 50%;
+								border-radius: 50%;
+			}
+			#about, #contact { 
+				width: 48%; 
+				font-size: 150%;
+			}
+			#about { 
+				float: left; 
+			}
+			#contact { 
+				text-align: right;
+				float: right; 
+			}
+												
+			#about:before, #contact:before { 
+				content: ""; 
+				width: 150px; 
+				height: 250px; 
+			}
+														
+			#about:before { 
+				float: right; 
+			}
+			#contact:before { 
+				float: left; 
+			}
+
+
+			@media screen and (max-width: 720px) {
+				header { font-size: 390%; }
+				#about:before, #contact:before { content: none; 
+																				 float: none;}
+				#about, #contact { width: 100%;
+													 float: none;
+													 text-align: center;	}
+				.page-content { padding: 0; }
+				.page-content p { padding: 10px; }
+				.page-content h1 { padding: 10px; }
+				#about { margin-top: 25px;
+								 background: rgba(0, 0, 0, 0.1);	}
+				#headshot { max-width: 70%;
+										position: static;
+										display: block;
+										margin: 25px auto; }
+			}
+			@media screen and (max-width: 540px) {
+				header { font-size: 250%; }
+				#headshot { max-width: 85%; }
+			}
+			@media screen and (max-width: 360px) {
+				header { font-size: 210%; }
+			}
+		</style>
+
+
+		<title>Jacob Farnsworth</title>
+	</head>
+	<body>
+		<header>
+			<h1>
+				Jacob Farnsworth
+			</h1>
+		</header>
+		<div class="page-content">
+			<img id="headshot" src="jake_fisheye.jpg" alt="A SMUG MUG">
+			<div id="about">
+				<h1>
+					About
+				</h1>
+				<p>
+					I'm a recovering muscian with a hankering for good beer, classic rock,
+					moldy cheese, and butter.  Not necessarily all at the same time. 	
+					When I'm not building websites I like watching old scifi movies and
+					artsy french films with my wife. 
+				</p>
+				<p>
+					I also have a 
+					<a href="http://github.com/baroquebloke" target="_blank">GitHub</a>
+					where you can see other things I've been working on.
+				</p>
+			</div>
+			<div id="contact">
+				<h1>
+					Contact
+				</h1>
+				<p>
+					If you'd like to get in touch with me, feel free to drop me a line.
+					My phones always on, email is frequently checked, and post (usually)
+					comes on time.  	
+				</p>
+				<p>
+					But really, just send an
+					<a href="mailto:jake@baroquebloke.com">email</a>.
+					I check it compulsively throughout the day.  
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
+
